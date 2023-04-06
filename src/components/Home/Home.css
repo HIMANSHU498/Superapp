@@ -1,0 +1,83 @@
+.homepage {
+  position: relative;
+  display: flex;
+}
+
+.banner-img {
+  width: 50vw;
+  height: 100vh;
+}
+.already-login {
+  position: absolute;
+  width: 337px;
+  height: 26px;
+  left: 70px;
+  top: 41px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 108.69%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background: none;
+}
+.login-btn {
+  position: absolute;
+  width: 106px;
+  height: 32px;
+  left: 320px;
+  top: 35px;
+
+  background: #72db73;
+  border-radius: 33px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 108.69%;
+
+  letter-spacing: 0.02em;
+  border: none;
+  color: #ffffff;
+}
+.banner-heading {
+  position: absolute;
+  width: 500px;
+  height: 143px;
+  left: 72px;
+  top: 433px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.6rem;
+  line-height: 141.69%;
+  /* or 78px */
+
+  letter-spacing: 0.02em;
+  background: none;
+  color: #ffffff;
+}
+
+/* signup side css */
+.signup {
+  width: 50vw;
+  height: 100vh;
+  background: red;
+}
+
+.form-title {
+  width: 239px;
+  height: 94px;
+  left: 800px;
+  top: 100px;
+
+  font-family: "Single Day";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 139.69%;
+
+  color: #72db73;
+}
