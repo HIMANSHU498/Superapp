@@ -1,0 +1,154 @@
+/* signup side css */
+.signup {
+  background-color: black;
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+p {
+  color: red;
+  margin: 0;
+  position: relative;
+  left: 10%;
+  font-size: 0.8rem;
+}
+
+.form-title {
+  position: absolute;
+  width: 239px;
+  height: 94px;
+  left: 39%;
+  top: 2%;
+
+  font-family: "Single Day";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 139.69%;
+
+  color: #72db73;
+}
+.heading2 {
+  position: absolute;
+  width: 292px;
+  height: 27px;
+  left: 35%;
+  top: 13%;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 139.69%;
+  /* or 35px */
+
+  color: #ffffff;
+}
+.heading3 {
+  position: absolute;
+  width: 120.18px;
+  height: 27.82px;
+  left: 42%;
+  top: 20%;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 139.69%;
+
+  color: #ffffff;
+}
+.heading3 span {
+  color: #72db73;
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  position: absolute;
+  left: 22%;
+  top: 28%;
+}
+
+.user-input {
+  width: 296px;
+  height: 35px;
+  color: white;
+  margin: 10px 20px;
+  padding-left: 20px;
+  border: none;
+  background: #292929;
+  border-radius: 3.81584px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.agreement {
+  position: absolute;
+  left: 8%;
+  top: 100%;
+  cursor: pointer;
+}
+.form-inputs label {
+  cursor: pointer;
+  width: 70%;
+  top: 100%;
+  left: 15%;
+  position: absolute;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 139.69%;
+  /* or 28px */
+
+  letter-spacing: 0.02em;
+
+  color: #7a7676;
+}
+
+.signup-btn {
+  position: absolute;
+  width: 85%;
+  height: 13%;
+  top: 115%;
+  left: 8%;
+  background: #72db73;
+  border-radius: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 108.69%;
+  /* or 32px */
+  cursor: pointer;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.signup-btn:active {
+  background: #057607;
+}
+
+.terms {
+  position: absolute;
+  width: 280px;
+
+  left: 28%;
+  top: 85%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.6rem;
+  line-height: 141.7%;
+  /* or 26px */
+
+  letter-spacing: 0.02em;
+
+  color: #7c7c7c;
+}
