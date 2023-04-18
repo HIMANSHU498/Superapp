@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Form.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   const [userValues, setUserValues] = useState({
     name: "",
     username: "",
@@ -17,6 +19,7 @@ const Home = () => {
     e.preventDefault();
     setError(Validation(userValues));
     localStorage.setItem("userValues", JSON.stringify(userValues));
+    navigate("/category");
   };
 
   const Validation = (values) => {
@@ -44,7 +47,7 @@ const Home = () => {
         <h3 className="heading3">
           Email &nbsp;<span>|</span>&nbsp; Google
         </h3>
-        <form className="form-inputs" onSubmit={handleSubmit}>
+        <form className="form-inputs">
           <input
             type="text"
             name="name"
@@ -93,7 +96,9 @@ const Home = () => {
             {" "}
             Share my registration data with Superapp
           </label>
-          <button className="signup-btn">SIGN UP</button>
+          <button className="signup-btn" onClick={handleSubmit}>
+            SIGN UP
+          </button>
         </form>
         <div className="terms">
           By clicking on Sign up. you agree to Superapp &nbsp;
