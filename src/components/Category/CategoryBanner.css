@@ -31,6 +31,16 @@
   line-height: 139.69%;
   color: #ffffff;
 }
+.selection-box {
+  position: relative;
+  gap: 0.4rem;
+  top: 65%;
+  left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 50%;
+}
 .select-category {
   width: 120px;
   height: 30px;

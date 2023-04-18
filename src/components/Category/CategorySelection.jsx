@@ -1,45 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CategorySelection.css";
 import categories from "./categories.js";
-import { useNavigate } from "react-router-dom";
-
-const CategorySelection = () => {
-  const [selected, setSelected] = useState([]);
-
-  const Clicked = (data) => {
-    if (selected.includes(data)) {
-      setSelected(selected.filter((item) => item !== data));
-    } else {
-      setSelected([...selected, data]);
-    }
-  };
-  const navigate = useNavigate();
-  const handleClick = () => {
-    localStorage.setItem("entertainment Category", JSON.stringify(selected));
-    if (selected.length >= 3) {
-      navigate("/profile");
-    }
-  };
+const CategorySelection = ({ selected, Clicked, handleClick }) => {
   return (
     <>
       <div className="right-container">
-        {selected.map((item, i) => {
-          return (
-            <div
-              key={i}
-              className="select-category"
-              style={{ marginTop: "20%" }}
-            >
-              {item} &nbsp;
-              <span
-                style={{ color: "#080C00", cursor: "pointer" }}
-                onClick={() => Clicked(item)}
-              >
-                X
-              </span>
-            </div>
-          );
-        })}
         <div className="cardWrapper">
           {categories.map((e, index) => (
             <div
@@ -47,9 +12,7 @@ const CategorySelection = () => {
               style={{
                 background: e.color,
                 border: `${
-                  selected.includes(e.title)
-                    ? "4px solid green"
-                    : "4px solid white"
+                  selected.includes(e.title) ? "4px solid green" : "none"
                 }`,
               }}
               onClick={() => Clicked(e.title)}
