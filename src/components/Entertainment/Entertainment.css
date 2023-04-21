@@ -1,3 +1,47 @@
 .entertainment-container {
   color: white;
+  width: 100vw;
+  height: 100vh;
+}
+.page-title {
+  position: absolute;
+  width: 239px;
+  height: 94px;
+  left: 3%;
+  top: 2%;
+
+  font-family: "Single Day";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 139.69%;
+
+  color: #72db73;
+}
+.profile-icon {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  left: 92%;
+  top: 4%;
+
+  border: 1.41279px solid #fffcfc;
+  filter: drop-shadow(0px 2.52891px 2.02313px rgba(0, 0, 0, 0.31));
+  border-radius: 50px;
+  cursor: pointer;
+}
+.entertainment-h2 {
+  position: absolute;
+  left: 5%;
+  top: 14%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 139.69%;
+  /* or 42px */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
 }

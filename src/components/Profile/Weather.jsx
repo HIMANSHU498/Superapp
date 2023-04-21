@@ -40,7 +40,7 @@ const Weather = () => {
             </div>
             <span></span>
             <div className="temp">
-              {weatherData.current.temp_c} C
+              {weatherData.current.temp_c}&deg;C
               <p style={{ color: "white", marginTop: "`10%" }}>
                 <img src={temp} alt="temp-icon" className="weather-icon" />
                 {weatherData.current.pressure_mb} mbar <br />
