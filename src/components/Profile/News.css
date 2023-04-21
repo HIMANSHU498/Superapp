@@ -1,0 +1,80 @@
+.news-container {
+  width: 21vw;
+  height: 85vh;
+
+  border-radius: 18px;
+  position: absolute;
+  left: 76%;
+  top: 5%;
+}
+.news-img {
+  position: absolute;
+  width: 21vw;
+  height: 50vh;
+  border-radius: 19px 19px 0px 0px;
+}
+.news-title {
+  position: absolute;
+  width: 21vw;
+  height: 15vh;
+  top: 42%;
+  background: rgba(0, 0, 0, 0.74);
+  color: white;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.news-title div {
+  margin-top: 10px;
+  width: 80%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 123.69%;
+  /* or 40px */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.news-title span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 141.69%;
+  /* identical to box height, or 26px */
+
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+.news {
+  position: absolute;
+  width: 21vw;
+  height: 34vh;
+
+  top: 60%;
+  border-radius: 0px 0px 19px 19px;
+  background: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 120.69%;
+  /* or 30px */
+  padding: 15px 15px;
+  text-align: justify;
+  box-sizing: border-box;
+  color: #272727;
+}
+.browse {
+  position: absolute;
+  width: 8%;
+  height: 6%;
+  left: 89%;
+  top: 92%;
+  color: white;
+  background: #148a08;
+  border-radius: 34.7771px;
+}
