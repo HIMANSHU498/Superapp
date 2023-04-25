@@ -36,7 +36,10 @@ const Weather = () => {
                 src={weatherData.current.condition.icon}
                 alt="weather condition"
               />
-              <div> {weatherData.current.condition.text}</div>
+              <div style={{ textAlign: "center" }}>
+                {" "}
+                {weatherData.current.condition.text}
+              </div>
             </div>
             <span></span>
             <div className="temp">
@@ -51,8 +54,8 @@ const Weather = () => {
             <div className="wind">
               <img src={wind} alt="wind-icon" className="weather-icon" />
               {weatherData.current.wind_kph} km/h <br />
-              wind <br />
-              <br />
+              wind
+              <br /> <br />
               <span style={{ border: "none" }}>
                 <img
                   src={humidity}

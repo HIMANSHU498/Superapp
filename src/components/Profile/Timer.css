@@ -1,0 +1,84 @@
+.timer-container {
+  position: absolute;
+  width: 66vw;
+  height: 26vh;
+  left: 2%;
+  top: 64%;
+
+  background: #22284d;
+  border-radius: 19px;
+}
+.timer-circle {
+  position: absolute;
+  width: 15%;
+  height: 80%;
+  margin: 2% 4%;
+  padding-left: 13px;
+  padding-top: 13px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #151930;
+}
+.time-setter {
+  position: absolute;
+  left: 30%;
+  width: 40vw;
+  height: 25vh;
+  display: block;
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+
+.timer {
+  width: 30vw;
+  height: 20vh;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hours {
+  text-align: center;
+  padding: 6px;
+}
+
+.timer-container img {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.hours h3 {
+  font-size: small;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.hours h4 {
+  font-size: small;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  color: #949494;
+}
+.time-setter span {
+  font-size: 3rem;
+  position: relative;
+  top: 30%;
+  color: white;
+}
+.start-time {
+  position: absolute;
+  width: 30vw;
+  height: 5vh;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-style: "Roboto";
+  background: #ff6a6a;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.start-time:active {
+  background-color: #dd3737;
+}

@@ -4,7 +4,7 @@ body {
 .user-card {
   position: absolute;
   width: 30vw;
-  height: 38vh;
+  height: 32vh;
   left: 2%;
   top: 5%;
 
@@ -25,7 +25,7 @@ body {
   height: 70%;
 
   margin-left: 32%;
-  margin-top: 8%;
+  margin-top: 2%;
 }
 .card-name {
   font-family: "Roboto";
@@ -33,7 +33,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
   letter-spacing: 0.02em;
   padding: 10px 0;
   color: #ffffff;

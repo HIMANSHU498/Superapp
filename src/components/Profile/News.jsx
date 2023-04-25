@@ -11,7 +11,7 @@ const News = () => {
         "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=b516f91932ac4dd0a3cfc38900d24f3c"
       );
       const response = await data.json();
-      setNews(response.articles[2]);
+      setNews(response.articles[4]);
     };
     getNews();
   }, []);

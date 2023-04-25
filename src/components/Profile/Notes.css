@@ -1,0 +1,60 @@
+.notepad-container {
+  position: absolute;
+  width: 32vw;
+  height: 55vh;
+  left: 36%;
+  top: 5%;
+
+  background: #f1c75b;
+  border-radius: 19px;
+}
+.notes {
+  display: block;
+  position: absolute;
+
+  left: 10%;
+  top: 10px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+
+  line-height: 105.69%;
+  /* or 40px */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+.editor {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  left: 82.19%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  top: 80.43%;
+}
+.notepad-container img {
+  width: 30px;
+}
+.notes-text {
+  top: 18%;
+  left: 10%;
+  position: absolute;
+  width: 26vw;
+  height: 32vh;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 150.69%;
+  background: none;
+
+  padding: 15px 15px;
+  text-align: justify;
+  box-sizing: border-box;
+  color: #272727;
+}

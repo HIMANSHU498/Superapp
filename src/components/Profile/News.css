@@ -1,21 +1,21 @@
 .news-container {
-  width: 21vw;
+  width: 24vw;
   height: 85vh;
 
   border-radius: 18px;
   position: absolute;
-  left: 76%;
+  left: 73%;
   top: 5%;
 }
 .news-img {
   position: absolute;
-  width: 21vw;
+  width: 24vw;
   height: 50vh;
   border-radius: 19px 19px 0px 0px;
 }
 .news-title {
   position: absolute;
-  width: 21vw;
+  width: 24vw;
   height: 15vh;
   top: 42%;
   background: rgba(0, 0, 0, 0.74);
@@ -29,7 +29,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 123.69%;
   /* or 40px */
 
@@ -51,7 +51,7 @@
 }
 .news {
   position: absolute;
-  width: 21vw;
+  width: 24vw;
   height: 34vh;
 
   top: 60%;

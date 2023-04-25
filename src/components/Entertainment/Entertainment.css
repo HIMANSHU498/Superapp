@@ -45,3 +45,27 @@
 
   color: #ffffff;
 }
+.movies-container {
+  width: 95vw;
+  height: auto;
+  position: absolute;
+  left: 3%;
+  top: 20%;
+  border: 2px solid red;
+  color: rgb(255, 255, 255);
+}
+.movies-card {
+  display: block;
+}
+.movie-category {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 139.69%;
+  /* identical to box height, or 42px */
+
+  letter-spacing: 0.02em;
+
+  color: #878787;
+}
