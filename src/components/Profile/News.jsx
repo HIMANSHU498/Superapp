@@ -35,7 +35,11 @@ const News = () => {
         ) : (
           <></>
         )}
-        {news ? <div className="news">{news.description}</div> : <></>}
+        {news ? (
+          <div className="news">{news.description}</div>
+        ) : (
+          <p>api fetching the data</p>
+        )}
       </div>
       <button className="browse" onClick={handleClick}>
         Browse
