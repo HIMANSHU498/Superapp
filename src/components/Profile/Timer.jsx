@@ -3,6 +3,7 @@ import "./Timer.css";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import up from "./../../assets/up.png";
 import down from "./../../assets/down.png";
+import beep from "./../../assets/Beep.mp3";
 const Timer = () => {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -46,7 +47,9 @@ const Timer = () => {
     const hour = Math.floor(time / 3600);
     const minute = Math.floor((time % 3600) / 60);
     const second = time % 60;
-
+    if (time === 0) {
+      new Audio(beep).play();
+    }
     return `${hour}:${minute}:${second}`;
   };
 

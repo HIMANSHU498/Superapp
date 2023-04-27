@@ -9,6 +9,7 @@ const Home = () => {
     username: "",
     email: "",
     mobile: "",
+    check: false,
   });
   const [error, setError] = useState({});
 
@@ -17,9 +18,13 @@ const Home = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError(Validation(userValues));
-    localStorage.setItem("userValues", JSON.stringify(userValues));
-    navigate("/category");
+    const errors = Validation(userValues);
+    if (Object.keys(errors).length === 0) {
+      localStorage.setItem("userValues", JSON.stringify(userValues));
+      navigate("/category");
+    } else {
+      setError(errors);
+    }
   };
 
   const Validation = (values) => {
@@ -35,6 +40,9 @@ const Home = () => {
     }
     if (!values.mobile) {
       errors.mobile = "*mobile is required";
+    }
+    if (!values.check) {
+      errors.check = "*please accept the terms and conditions";
     }
     return errors;
   };
@@ -87,15 +95,21 @@ const Home = () => {
           <input
             type="checkbox"
             className="agreement"
-            name="agreement"
+            name="check"
             value="tick"
             id="agreement_checkbox"
-            required
+            onChange={(e) =>
+              setUserValues({
+                ...userValues,
+                [e.target.name]: e.target.checked,
+              })
+            }
           />
           <label htmlFor="agreement_checkbox">
             {" "}
             Share my registration data with Superapp
           </label>
+          <p>{error.check}</p>
           <button className="signup-btn" onClick={handleSubmit}>
             SIGN UP
           </button>
