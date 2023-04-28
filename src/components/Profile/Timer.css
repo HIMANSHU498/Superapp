@@ -82,3 +82,52 @@
 .start-time:active {
   background-color: #dd3737;
 }
+@media screen and (min-width: 1400px) {
+  .timer-circle {
+    position: absolute;
+    width: 15%;
+    height: 80%;
+    margin: 2% 4%;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #151930;
+  }
+  .time-setter {
+    position: absolute;
+    left: 30%;
+    width: 40vw;
+    height: 25vh;
+    display: block;
+    padding-left: 10%;
+    box-sizing: border-box;
+  }
+
+  .timer {
+    font-size: 1.4rem;
+  }
+
+  .timer-container img {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+  }
+
+  .hours h3 {
+    font-size: medium;
+  }
+
+  .hours h4 {
+    font-size: medium;
+  }
+  .time-setter span {
+    font-size: 3rem;
+    position: relative;
+    top: 30%;
+    color: white;
+  }
+  .start-time {
+    font-size: larger;
+  }
+}

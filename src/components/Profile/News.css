@@ -79,3 +79,18 @@
   border-radius: 34.7771px;
   cursor: pointer;
 }
+@media screen and (min-width: 1400px) {
+  .news-title div {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .news-title span {
+    font-size: 1rem;
+  }
+  .news {
+    font-size: 1rem;
+  }
+  .browse {
+    font-size: large;
+  }
+}

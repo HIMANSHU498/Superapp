@@ -18,6 +18,8 @@ const Category = () => {
     localStorage.setItem("entertainment Category", JSON.stringify(selected));
     if (selected.length >= 3) {
       navigate("/profile");
+    } else {
+      alert("Please select atleast 3 categories");
     }
   };
   return (

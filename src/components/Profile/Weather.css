@@ -69,3 +69,26 @@
   font-size: 0.8rem;
   margin-top: 2%;
 }
+
+@media screen and (min-width: 1400px) {
+  .date-card {
+    padding-left: 30%;
+  }
+
+  .cloud {
+    font-size: 0.8rem;
+  }
+  .cloud img {
+    width: 60px;
+    height: 60px;
+  }
+  .weather-icon {
+    width: 15px;
+    height: 20px;
+  }
+
+  .wind {
+    font-size: 0.9rem;
+    margin-top: 2%;
+  }
+}

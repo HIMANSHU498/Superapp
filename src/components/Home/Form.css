@@ -218,6 +218,7 @@ p {
 
   .form-inputs label {
     font-size: 1.1rem;
+    width: 80%;
   }
   .signup-btn {
     font-size: 1.2rem;

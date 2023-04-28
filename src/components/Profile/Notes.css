@@ -58,3 +58,18 @@
   box-sizing: border-box;
   color: #272727;
 }
+@media screen and (min-width: 1400px) {
+  .notes {
+    font-size: 2rem;
+  }
+  .editor {
+    width: 60px;
+    height: 60px;
+  }
+  .notepad-container img {
+    width: 40px;
+  }
+  .notes-text {
+    font-size: 1.2rem;
+  }
+}
