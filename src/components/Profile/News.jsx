@@ -8,24 +8,12 @@ const News = () => {
   const [news, setNews] = useState(false);
 
   useEffect(() => {
-    const options = {
-      method: "GET",
-      url: "https://api.newscatcherapi.com/v2/search",
-      params: {
-        q: "Cryptocurrency",
-        lang: "en",
-        sort_by: "relevancy",
-        page: "1",
-      },
-      headers: {
-        "x-api-key": "W9x4V7dUVP4aMBavqj7mdxxfFCyNqDUukgcag4gffoI",
-      },
-    };
-
     axios
-      .request(options)
+      .request(
+        "https://saurav.tech/NewsAPI/top-headlines/category/technology/in.json"
+      )
       .then(function (response) {
-        setNews(response.data.articles[0]);
+        setNews(response.data.articles[5]);
       })
       .catch(function (error) {
         console.error(error);
@@ -39,20 +27,20 @@ const News = () => {
     <>
       <div className="news-container">
         <img
-          src={news ? news.media : newsBackground}
+          src={news ? news.urlToImage : newsBackground}
           alt="pic"
           className="news-img"
         />
         {news ? (
           <div className="news-title">
-            <div>{news.title}</div>
-            <span>{news.published_date}</span>
+            <div>{news ? news.title : ""}</div>
+            <span>{news.publishedAt}</span>
           </div>
         ) : (
-          <></>
+          <p>loading</p>
         )}
         {news ? (
-          <div className="news">{news.summary}</div>
+          <div className="news">{news.content}</div>
         ) : (
           <p>api fetching the data</p>
         )}
