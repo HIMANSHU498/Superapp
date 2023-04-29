@@ -11,7 +11,7 @@ const categories = [
   { id: 18, title: "Drama", color: "#D7A4FF", image: drama },
   { id: 28, title: "Action", color: "#FF5209", image: action },
   { id: 14, title: "Fantasy", color: " #FF4ADE", image: fantasy },
-  { id: 878, title: "Fiction", color: "#6CD061", image: fiction },
+  { id: 878, title: "Science Fiction", color: "#6CD061", image: fiction },
   { id: 10402, title: "Music", color: "#E61E32", image: music },
   { id: 27, title: "Horror", color: "#7358FF", image: horror },
   { id: 37, title: "Western", color: "#912500", image: western },
