@@ -11,7 +11,12 @@ const News = () => {
     const options = {
       method: "GET",
       url: "https://api.newscatcherapi.com/v2/search",
-      params: { q: "Bitcoin", lang: "en", sort_by: "relevancy", page: "1" },
+      params: {
+        q: "Cryptocurrency",
+        lang: "en",
+        sort_by: "relevancy",
+        page: "1",
+      },
       headers: {
         "x-api-key": "W9x4V7dUVP4aMBavqj7mdxxfFCyNqDUukgcag4gffoI",
       },

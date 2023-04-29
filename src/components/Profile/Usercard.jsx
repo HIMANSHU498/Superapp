@@ -3,7 +3,7 @@ import "./Usercard.css";
 import userPic from "./../../assets/user-pic.png";
 const Usercard = () => {
   const userData = JSON.parse(localStorage.getItem("userValues"));
-  const categories = JSON.parse(localStorage.getItem("entertainment Category"));
+  const categories = JSON.parse(localStorage.getItem("category"));
 
   return (
     <>

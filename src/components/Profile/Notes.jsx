@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Notes.css";
 import notepad from "./../../assets/notepad.png";
 const Notes = () => {
-  const [notes, setNotes] = useState(localStorage.getItem("notes"));
-  const [disabled, setDisabled] = useState(false);
+  const [notes, setNotes] = useState(localStorage.getItem("notes") || "");
+  const [disabled, setDisabled] = useState(true);
   const handleChange = (e) => {
     setNotes(e.target.value);
     localStorage.setItem("notes", notes);

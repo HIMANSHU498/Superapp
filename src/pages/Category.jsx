@@ -15,7 +15,7 @@ const Category = () => {
   };
   const navigate = useNavigate();
   const handleClick = () => {
-    localStorage.setItem("entertainment Category", JSON.stringify(selected));
+    localStorage.setItem("category", JSON.stringify(selected));
     if (selected.length >= 3) {
       navigate("/profile");
     } else {
